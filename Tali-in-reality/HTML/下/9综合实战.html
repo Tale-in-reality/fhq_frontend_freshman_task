@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例</title>
+</head>
+<body>
+    <h2>青春不常在，抓紧谈恋爱</h2>
+    <form action="anli.PHP" method="get" name="anli">
+        <table align="left">
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type="radio" name="sex" value="nan" id="nan"><label for="sex">男 </label>
+                    <input type="radio" name="sex" value="nv" id="nv"><label for="sex">女 </label>
+                </td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td>
+                    <select name="year">
+                        <option value="2004">18</option>
+                        <option value="2005">19</option>
+                        <option value="2006">20</option>
+                        <option selected="selected">--请选择年--</option>
+                    </select>
+                    <select name="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option selected="selected">--请选择月--</option>
+                    </select>
+                    <select name="day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option selected="selected">--请选择日--</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>所在地区</td>
+                <td>
+                    <input type="text" name="place" id="place"><lebel for="place">
+                </td>
+            </tr>
+            <tr>
+                <td>婚姻状况</td>
+                <td>
+                    <input type="radio" name="marry" value="yes" id="yes"><label for="yes">已婚 </label>
+                    <input type="radio" name="marry" value="no" id="no"><label for="no">未婚 </label>
+                    <input type="radio" name="marry" value="divorce" id="divorce"><label for="divorce">离异 </label>
+                </td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td>
+                    <input type="text" name="graduate" id="place"><lebel for="graduate">
+                </td>
+            </tr>
+            <tr>
+                <td>喜欢的类型</td>
+                <td>
+                    <input type="checkbox" name="type" value="1"><label for="type">妩媚的</label>
+                    <input type="checkbox" name="type" value="2"><label for="type">可爱的</label>
+                    <input type="checkbox" name="type" value="3"><label for="type">温柔的</label>
+                    <input type="checkbox" name="type" value="4"><label for="type">都喜欢</label>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <textarea name="introduce" id="introduce" cols="30" rows="10"></textarea>
+                </td>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" name="create" value="免费注册">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="agree" value="yes"><label for="agree">我同意会员注册条款和会员加入标准</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="https://space.bilibili.com/16322326" target="_blank">我是会员，立即登录</a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h3>我承诺</h3>
+                    <ul>
+                        <li>年满18岁、单身</li>
+                        <li>抱着严肃的态度</li>
+                        <li>真诚寻找另一半</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

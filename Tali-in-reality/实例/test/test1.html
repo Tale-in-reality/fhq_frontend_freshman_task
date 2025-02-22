@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多个盒子弹出不同文本框</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+
+<body>
+    <!-- 可触发弹出框的盒子 -->
+    <div class="trigger-box" data-target="popup1">触发弹出框 1</div>
+    <div class="trigger-box" data-target="popup2">触发弹出框 2</div>
+    <div class="trigger-box" data-target="popup3">触发弹出框 3</div>
+
+    <!-- 弹出框 -->
+    <div class="popup-box" id="popup1">这是弹出框 1 的内容</div>
+    <div class="popup-box" id="popup2">这是弹出框 2 的内容</div>
+    <div class="popup-box" id="popup3">这是弹出框 3 的内容</div>
+
+    <script src="test1.js"></script>
+</body>
+
+</html>

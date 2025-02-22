@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1536px;
+    margin: auto;
+}
+
+.head {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 1536px;
+    height: 400px;
+    background-image: url(search.jpg);
+    background-size: cover;
+    margin: auto;
+}
+
+.search {
+    width: 1536px;
+    height: 64px;
+    text-align: center;
+}
+
+.left1 {
+    width: 37.83%;
+    float: left;
+    margin-left: 0.83%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* 设置left1中若干元素的样式 */
+/* .left1 */
+a div {
+    float: left;
+    text-align: center;
+    margin: 18px 20px 18px 0;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+a div .download {
+    float: left;
+    text-align: center;
+    margin: 18px 0.83% 18px 0;
+}
+
+/* 设置sy图片 */
+.back-png {
+    float: left;
+    height: 56px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.nav-search-content {
+    margin-top: 12px;
+    float: left;
+    width: 21.13%;
+    height: 40px;
+    background-color: rgba(256, 256, 256, 0.5);
+    border-radius: 5px;
+}
+
+/* 设置搜索框 */
+.search-middle {
+    float: left;
+    margin-left: 0.83%;
+    margin-top: 10px;
+    width: 200px;
+    height: 32px;
+    background-color: rgba(256, 256, 256, 0);
+    border: none;
+    border-radius: 3px;
+}
+
+.nav-search-input {
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    width: 200px;
+    height: 20px;
+    float: left;
+    background-color: rgba(256, 256, 256, 0);
+    border: none;
+    border-radius: 3px;
+}
+
+.nav-search-input:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* .search-middle:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+
+/* 设置搜素按钮 */
+.nav-search-btn {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    border: 2px solid rgba(256, 256, 256, 0.3);
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgba(256, 256, 256, 0);
+    border: none;
+}
+
+.search-btn-img {
+    max-width: 20px;
+    max-height: 20px;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.nav-search-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+.right1 {
+    width: 40.16%;
+    height: 64px;
+    float: right;
+    margin: 4px 0 4px 0;
+    font-size: 10px;
+}
+
+/* 我的头像 */
+.right1 a .me {
+    float: left;
+    margin-top: -4px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    margin-left: 40px;
+}
+
+.right1 a .btn-tougao {
+    float: left;
+    margin-left: 20px;
+    margin-top: 13px;
+    background-color: #FB7299;
+    width: 60px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.right1 a .btn-tougao:hover {
+    background-color: #FC8BAB;
+}
+
+
+
+
+/* ----------------------------------------------------
+----------------------------------------------------
+---------------------------------------------------- */
+
+
+
+/* height 73 */
+.down {
+    display: flex;
+    justify-content: center;
+    width: 1536px;
+    height: 73px;
+    margin: auto;
+    position: absolute;
+    top: 227px;
+    text-align: center;
+}
+
+/* 清除浮动 */
+.upinfo-detail::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 丝言图片 */
+.left2 .sy .sy-png {
+    float: left;
+    height: 64px;
+    margin-right: 25px;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* 丝言大字 */
+.upinfo-detail .nickname {
+    float: left;
+    height: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-right: 10px;
+}
+
+/* lv6 */
+.upinfo-detail a .lv6 {
+    float: left;
+    height: 24px;
+    font-weight: 400;
+    height: 20px;
+    vertical-align: center;
+}
+
+/* 设置三张图片的外间距 */
+.upinfo-detail div img {
+    height: 24px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.upinfo-detail a div {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.upinfo-detail .gender-png {
+    float: left;
+    height: 24px;
+    font-weight: 400;
+    height: 20px;
+}
+
+.upinfo-detail .bigvip-png {
+    float: left;
+    height: 24px;
+    font-weight: 400;
+    height: 20px;
+}
+
+/* 文字 */
+.upinfo-detail .upinfo-detail_bottom {
+    float: left;
+    font-size: 12px;
+    height: 17px;
+    color: white;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1536px;
+    margin: auto;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------
+----------------------------------------------
+----------------------------------------------
+------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.head {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 1536px;
+    height: 400px;
+    background-image: url(search.jpg);
+    background-size: cover;
+    margin: auto;
+}
+
+.search {
+    width: 1536px;
+    height: 64px;
+    text-align: center;
+}
+
+.left1 {
+    width: 37.83%;
+    float: left;
+    margin-left: 0.83%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* 设置left1中若干元素的样式 */
+/* .left1 */
+.head a div {
+    float: left;
+    text-align: center;
+    margin: 18px 20px 18px 0;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.head a .head-search {
+    position: relative;
+}
+
+.head-search:hover {
+    animation: jump 0.3s ease;
+}
+
+/* ---------------------------------------------------- */
+/* 店铺的弹出图片 */
+.dianpu {
+    position: absolute;
+    width: 100px;
+    background-color: #f9f9f9;
+    border: 2px solid rgba(256, 256, 256, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    margin-top: 30px;
+}
+
+.dianpu img {
+    width: 100px;
+    border: 2px solid rgba(256, 256, 256, 0.3);
+    border-radius: 50%;
+}
+
+.dianpu span {
+    width: 100px;
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.dianpu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 直播间的弹出图片 */
+.live {
+    position: absolute;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border: 2px solid rgba(256, 256, 256, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.live-jpg {
+    float: left;
+    width: 120px;
+    height: 120px;
+    border: white;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+}
+
+.live span {
+    float: left;
+    font-size: 14px;
+    color: black;
+    width: 100%;
+    /* 确保文本占满父容器宽度 */
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.live.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 最多播放的弹出图片 */
+.max {
+    position: absolute;
+    width: 150px;
+    background-color: #fff;
+    border: 2px solid rgba(256, 256, 256, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.max.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.max-png {
+    float: left;
+    width: 150px;
+}
+
+
+
+/* 下载的弹出图片 */
+.download {
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    border: 2px solid rgba(256, 256, 256, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.download.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ---------------------------------------------------- */
+a div .download {
+    margin: 18px 0.83% 18px 0;
+}
+
+/* 设置sy图片 */
+.back-png {
+    float: left;
+    height: 56px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.nav-search-content {
+    margin-top: 12px;
+    float: left;
+    width: 21.13%;
+    height: 40px;
+    background-color: rgba(256, 256, 256, 0.5);
+    border-radius: 5px;
+}
+
+/* 设置搜索框 */
+.search-middle {
+    float: left;
+    margin-left: 0.83%;
+    margin-top: 10px;
+    width: 200px;
+    height: 32px;
+    background-color: rgba(256, 256, 256, 0);
+    border: none;
+    border-radius: 3px;
+}
+
+.nav-search-input {
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    width: 200px;
+    height: 20px;
+    float: left;
+    background-color: rgba(256, 256, 256, 0);
+    border: none;
+    border-radius: 3px;
+}
+
+.nav-search-input:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* .search-middle:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+
+/* 设置搜素按钮 */
+.nav-search-btn {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    border: 2px solid rgba(256, 256, 256, 0.3);
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgba(256, 256, 256, 0);
+    border: none;
+}
+
+.search-btn-img {
+    max-width: 20px;
+    max-height: 20px;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.nav-search-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+.right1 {
+    width: 40.16%;
+    height: 64px;
+    float: right;
+    margin: 4px 0 4px 0;
+    font-size: 10px;
+}
+
+/* 我的头像 */
+.right1 a .me {
+    float: left;
+    margin-top: -4px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    margin-left: 40px;
+}
+
+.right1 a .btn-tougao {
+    float: left;
+    margin-left: 20px;
+    margin-top: 13px;
+    background-color: #FB7299;
+    width: 60px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right1 a .btn-tougao:hover {
+    background-color: #FC8BAB;
+}
+
+
+
+
+/* ----------------------------------------------------
+----------------------------------------------------
+---------------------------------------------------- */
+
+
+
+/* height 73 */
+.down {
+    display: flex;
+    justify-content: center;
+    width: 1536px;
+    height: 73px;
+    margin: auto;
+    position: absolute;
+    top: 227px;
+    text-align: center;
+}
+
+.left2 {
+    width: 630px;
+    height: 73px;
+    margin-right: 135px;
+}
+
+/* 清除浮动 */
+.upinfo-detail::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 丝言图片 */
+.left2 .sy .sy-png {
+    float: left;
+    height: 64px;
+    margin-right: 25px;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* 丝言大字 */
+.upinfo-detail .nickname {
+    float: left;
+    height: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-right: 10px;
+}
+
+/* lv6 */
+.upinfo-detail a .lv6 {
+    float: left;
+    height: 24px;
+    font-weight: 400;
+    height: 20px;
+    vertical-align: center;
+}
+
+/* 清除lv6的下边界，让文字上来 */
+.upinfo-detail a .lv6-div {
+    margin-bottom: 10px;
+}
+
+.upinfo-detail a .bigvip {
+    margin-bottom: 10px;
+}
+
+/* 设置三张图片的外间距 */
+.upinfo-detail div img {
+    height: 24px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.upinfo-detail a div {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.upinfo-detail .gender-png {
+    float: left;
+    height: 24px;
+    font-weight: 400;
+    height: 20px;
+}
+
+.upinfo-detail .bigvip-png {
+    float: left;
+    height: 24px;
+    font-weight: 400;
+    height: 20px;
+}
+
+/* 文字 */
+.upinfo-detail .upinfo-detail_bottom {
+    float: left;
+    font-size: 12px;
+    height: 17px;
+    color: white;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------------------------------------- */
+
+/* 右侧三个按钮 */
+.right2 {
+    width: 382px;
+    height: 34px;
+    margin-top: 20px;
+}
+
+.right2 button {
+    float: left;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    width: 150px;
+    height: 34px;
+    border-radius: 5px;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.right2 button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.right2 button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.right2 button.more {
+    width: 34px;
+    margin-right: 0;
+}
+
+.right2 button img {
+    vertical-align: middle;
+    height: 24px;
+}
+
+/* 关注按钮 */
+.right2 button.followed {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.right2 button.followed:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.right2 button.unfollowed {
+    background-color: #00AEEC;
+}
+
+.right2 button.unfollowed:hover {
+    background-color: #40C5F1;
+}
+
+
+/* -------------------------------------------------
+------------------------------------------------- */
+
+
+.plus {
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    width: 1536px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+}
+
+/* 堂主图片 */
+.plus .tangzhu {
+    float: left;
+    height: 100px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: tomato;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.plus .tangzhu img {
+    height: 50px;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.plus .tangzhu a {
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: tomato;
+}
+
+/* zett/bocchi图片 */
+.plus .bocchi {
+    float: left;
+    height: 100px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(255, 0, 162, 0.6);
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.plus .bocchi img {
+    height: 50px;
+    border: 2px solid rgba(255, 0, 157, 0.5);
+    border-radius: 50%;
+}
+
+.plus .bocchi a {
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 0, 162, 0.6);
+}
